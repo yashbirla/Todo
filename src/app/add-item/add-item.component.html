@@ -1,0 +1,15 @@
+<!-- <p>add-item works!</p> -->
+<div class="container">
+    <div class="top-bar">
+        <h1>Todo App</h1>
+        <img src="../image/photo.png" alt="logo" >
+    </div>
+    <input type="text" class="form-control input_box" placeholder="Enter todo task" [(ngModel)]="task" >
+    <br>
+    <button class="btn btn-primary" type="submit" (click)="addTask()" >Add Todo</button>
+</div>
+<br><br><br>
+<div class="mt-3 container">
+    <h1 class="list-heading">Todo Task List</h1>
+    <app-item-list *ngFor="let item of itemList;let i= index;" [task]="item" ></app-item-list>
+</div>

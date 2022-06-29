@@ -1,0 +1,18 @@
+.container_add_item {
+    width: 25%;
+    margin: 0 auto;
+}
+.heading {
+    width: 55%;
+    margin: auto;
+}
+.input_box {
+    width: 30%;
+}
+.list-heading {
+    margin-bottom: 50px;
+}
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+}

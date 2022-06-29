@@ -1,0 +1,32 @@
+<!-- <p>{{description}}</p> -->
+<!-- <div>
+    <p>{{task}}</p>
+    <p>{{date}}</p>
+</div> -->
+
+
+<div id="card_container">
+    <div class="todo_card">
+        <div class="task_desc">
+            <input type="checkbox" name="TodoItem">
+            <h3>
+                  {{task}}
+            </h3>
+            <p>
+                <button type="submit" class="btn btn-info btn1" (click)="editItem($event)">Edit</button>
+                <button type="button" class="btn btn-info btn2" (click)="deleteItem($event)">Delete</button>
+            </p>1
+            
+        </div>
+
+        <div class="date-time-container">
+            <p>
+                {{this.date.getDate()}}/{{this.date.getMonth()+1}}/{{this.date.getFullYear()}}
+            </p>
+            <p>
+                {{this.date.getHours()}}:{{this.date.getMinutes()}}:{{this.date.getSeconds()}}
+            </p>
+
+        </div>
+    </div>
+</div>
